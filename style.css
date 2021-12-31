@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f5f0fd;
+}
+.container {
+    margin: auto;
+    max-width: 2000px;
+}
+.services .heading {
+    margin-bottom: 20px;
+}
+.services .heading h1 {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 30px;
+}
+.services .section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .single-service {
+    flex-basis: calc(100% / 4);
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+.services .single-service-wrapper {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px rgb(102 0 255 / 7%);
+    transition: 0.2s;
+    height: 100%;
+}
+.services .single-service-wrapper:hover {
+    box-shadow: none;
+    transform: scale(0.985);
+}
+.services .service-icon {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services .service-icon-wrapper {
+    height: 70px;
+    width: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.services .service-icon i {
+    font-size: 30px;
+}
+.services .single-service-heading {
+    margin-bottom: 10px;
+    color: #606060;
+}
+.services .service-details {
+    font-size: 12px;
+    color: gray;
+    font-weight: 500;
+}
+@media screen and (max-width : 1200px) {
+    .container {
+        max-width: 960px;
+    }   
+    .services .single-service {
+        flex-basis: calc(100% / 4);
+    } 
+}
+@media screen and (max-width : 992px) {
+    .container {
+        max-width: 720px;
+    }   
+    .services .single-service {
+        flex-basis: calc(100% / 3);
+    } 
+}
+@media screen and (max-width : 768px) {
+    .container {
+        max-width: 540px;
+    }   
+    .services .single-service {
+        flex-basis: calc(100% / 2);
+    } 
+}
+@media screen and (max-width : 540px) {
+    .container {
+        max-width: 100%;
+    }   
+    .services .single-service {
+        flex-basis: calc(100% / 1);
+    } 
+}
